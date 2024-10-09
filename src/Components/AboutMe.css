@@ -1,0 +1,67 @@
+/* AboutMe.css */
+
+/* Global styles to apply the font to the entire document */
+body {
+    font-family: 'Arsenica', sans-serif; /* Use Arsenica as the primary font */
+  }
+  
+  /* Centering the content */
+  .about-container {
+    margin-top: 100px; /* Adjust for vertical alignment */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto; /* Allow height to fit the content */
+    text-align: center;
+    background-color: white; /* Ensure the background is white */
+    font-weight: 100;
+  }
+  
+  /* Styling the title */
+  .about-title {
+    font-size: 6rem;
+    font-family: 'Arsenica', serif; /* Apply Arsenica font */
+    position: relative;
+    z-index: 2; /* Ensures it stays on top */
+    margin: 0;
+    font-weight: 100;
+  }
+  
+  /* Description styling */
+  .about-description {
+    font-size: 1.5rem; /* Adjust font size as needed */
+    line-height: 1.6; /* Line height for spacing */
+    margin-top: 20px; /* Space below title */
+    position: relative; /* Keep it in the normal flow */
+    z-index: 2; /* Ensure it appears above the background */
+    max-width: 600px; /* Limit width for better readability */
+    opacity: 0; /* Set initial opacity for fade effect */
+  }
+  
+  /* Animation */
+  @keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    60% {
+        opacity: 1;
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+  }
+  
+  .about-title {
+    animation: bounceIn 1s ease forwards; /* Apply bounceIn animation */
+    animation-delay: 0.2s; /* Delay for the title */
+  }
+  
+  .about-description {
+    animation: bounceIn 1s ease forwards; /* Apply bounceIn animation */
+    animation-delay: 0.4s; /* Delay for the description */
+  }
+  

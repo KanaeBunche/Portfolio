@@ -1,0 +1,153 @@
+/* Home.css */
+
+/* Global styles to apply the font to the entire document */
+body {
+  font-family: 'Arsenica', sans-serif; /* Use Arsenica as the primary font */
+}
+
+/* Centering the content */
+.container {
+  margin-top: -140px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto; /* Adjust to auto for the description to fit below */
+  text-align: center;
+  background-color: white;
+  font-weight: 100;
+}
+
+/* Styling the name (Kanae) */
+.name {
+  font-size: 6rem;
+  font-family: 'Arsenica', serif; /* Apply Arsenica font */
+  position: absolute;
+  top: 35%;
+  z-index: 2; /* Ensures it stays on top of the image */
+  margin: 0;
+  font-weight: 100;
+}
+
+/* Styling the surname (Bunche) */
+.surname {
+  font-size: 4rem;
+  font-family: 'Arsenica', serif; /* Apply Arsenica font */
+  position: absolute;
+  top: 48%;
+  z-index: 2;
+  margin: 0;
+  font-weight: 100;
+}
+
+/* Styling the word 'PORTFOLIO' */
+.portfolio {
+  font-size: 8rem;
+  font-family: 'Arsenica', sans-serif; /* Apply Arsenica font */
+  position: absolute;
+  top: 52%;
+  z-index: 2;
+  margin: 0;
+  font-weight: 100;
+}
+
+/* Subtitle styling */
+.subtitle {
+  font-size: 1.5rem;
+  font-family: 'Arsenica', sans-serif; /* Apply Arsenica font */
+  position: absolute;
+  top: 75%;
+  z-index: 2;
+  margin: 0;
+}
+
+/* Home.css */
+/* ... existing styles ... */
+
+/* Description styling */
+.description {
+  font-size: 1.5rem;            /* Adjust font size as needed */
+  line-height: 1.6;             /* Line height for spacing */
+  margin-top: 20px;             /* Adjust the margin as needed */
+  position: relative;            /* Keep it in the normal flow */
+  z-index: 2;                   /* Ensure it appears above the image */
+  opacity: 0; 
+  max-width: 600px;                  /* Set initial opacity for fade effect */
+}
+
+
+
+/* Image container styling */
+.image-container {
+  position: relative;
+  width: 100%; /* Let the container take the full width */
+  height: auto;
+  margin: 0;
+}
+
+/* Image Styling */
+.face-image {
+  width: 2000px; /* Adjust width as necessary */
+  height: auto; /* Maintain aspect ratio */
+  opacity: 100; /* Keep the opacity for the overlay effect */
+  z-index: 1;
+  position: relative; 
+  left: 50%;
+  transform: translateX(-50%); /* Center the image */
+}
+
+@keyframes bounceIn {
+  0% {
+      opacity: 0;
+      transform: translateY(-30px);
+  }
+  60% {
+      opacity: 1;
+      transform: translateY(10px);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+
+
+.name, .surname, .portfolio {
+  animation: bounceIn 1s ease forwards; /* Apply bounceIn animation */
+}
+
+/* Delay animations for different elements */
+.name {
+  animation-delay: 0.2s;
+}
+
+.surname {
+  animation-delay: 0.4s;
+}
+
+.portfolio {
+  animation-delay: 0.6s;
+}
+
+
+.projects-subtitle{
+  font-size: 1.5rem;
+  font-family: 'Arsenica', sans-serif; /* Apply Arsenica font */
+  position: absolute;
+  top: 45%;
+  z-index: 2;
+  margin: 0;
+}
+
+.surname1 {
+  font-size: 2rem;
+  font-family: 'Arsenica', serif; /* Apply Arsenica font */
+  position: absolute;
+  top: 75%;
+  z-index: 2;
+  margin: 0;
+  font-weight: 100;
+}
+
+

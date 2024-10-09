@@ -1,0 +1,79 @@
+body {
+  font-family: 'Arsenica', sans-serif; /* Apply Arsenica as the primary font for the entire body */
+}
+
+.projects-container {
+  margin: 40px auto; /* Center the container with auto margins */
+  padding: 20px; /* Padding around the container */
+  display: flex; /* Enable flexbox for layout */
+  flex-direction: column; /* Stack projects vertically */
+  gap: 40px; /* Space between projects */
+  align-items: center; /* Center items horizontally */
+}
+
+.projects-title {
+  font-size: 3rem; /* Large font size for the title */
+  margin-bottom: 20px; /* Space below the title */
+  text-align: center; /* Center align the title */
+  font-weight: 100;
+}
+
+.project {
+  position: relative; /* Establish positioning context */
+  margin: 20px; /* Add spacing around the project */
+  padding: 20px; /* Padding for content */
+  background: white; /* Background color */
+  border-radius: 12px; /* Rounded corners */
+  overflow: hidden; /* Hide overflow */
+  max-width: 400px; /* Smaller maximum width to reduce size */
+  width: 100%; /* Full width for responsiveness */
+  opacity: 0; /* Start hidden for scroll effect */
+  transform: translateY(20px); /* Slightly shift down */
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Smooth transition for both properties */
+}
+
+.project-image {
+  width: 100%; /* Full width of the container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Rounded corners for images */
+  margin-top: 10px; /* Space above the image */
+}
+
+.project-description {
+  font-size: 1rem; /* Font size for description */
+  color: #666; /* Slightly lighter color */
+  margin: 10px 0; /* Margin for spacing */
+}
+
+.project-link {
+  display: inline-block; /* Allows padding and background */
+  padding: 10px 20px; /* Adjust padding for better click area */
+  color: white; /* Text color */
+  background: black; /* Button background */
+  text-decoration: none; /* Remove underline */
+  position: relative; /* Position for the pseudo-element */
+  overflow: hidden; /* Hide overflow for the effect */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.project-link:hover {
+  color: #333; /* Change text color on hover */
+}
+
+/* Contact section styling */
+.contact-section {
+  margin-top: 60px; /* Space above the contact section */
+  text-align: center; /* Center the content */
+}
+
+.contact-email {
+  color: black; /* Email link color */
+  font-size: 1.2rem; /* Slightly larger font for email */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+.contact-email:hover {
+  color: black; /* Darker color on hover */
+  font-family: 'Arsenica', sans-serif;
+}

@@ -1,0 +1,26 @@
+/* Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px; /* Adjust this as needed */
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Space between links */
+  }
+  
+  .nav-item {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: black; /* Black text */
+    transition: color 0.3s ease; /* Smooth hover transition */
+  }
+  
+  .nav-item:hover {
+    color: #ff6347; /* Accent color on hover */
+  }
+  
